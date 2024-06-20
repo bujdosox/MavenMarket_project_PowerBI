@@ -4,6 +4,8 @@ Through the investigation the company can get a clear picture about it’s perfo
 
 ![Maven Market_dashboard](https://github.com/bujdosox/LEGO_project_PowerBI/assets/173184545/2dc07f3c-e332-40ca-ac3a-48ddb6241a59)
 
+![Maven Market_map](https://github.com/bujdosox/LEGO_project_PowerBI/assets/173184545/ff8eb0ea-5f2b-4441-96bf-ecfc281ea371)
+
 ### Goal
 -   Looking for trends by temporal distribution of revenue
 -   Inspection of brands distribution based on
@@ -88,3 +90,4 @@ Through the investigation the company can get a clear picture about it’s perfo
         o   Checking interactions: turn out filtering of any charts/matrixes to the tree map
         o   Summarize outcomes on a separate page
         o   Create a fix panel with buttons: change between pages + clear all filters
+        o   Add a new page with map visualization to show transactions by cities + add slicers by countries
