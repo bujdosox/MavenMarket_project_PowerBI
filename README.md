@@ -8,42 +8,19 @@ Through the investigation the company can get a clear picture about it’s perfo
 
 ### Goal
 -   Looking for trends by temporal distribution of revenue
--   Inspection of brands distribution based on
-
-        o   total transactions
-        o   total profit
-        o   profit margin
-        o   and return rate
--   Inspection of monthly data comparing to previous month
-
-        o   transactions
-        o   profit
-        o   returns
+-   Inspection of brands distribution based on: total transactions, total profit, profit margin and return rate 
+-   Inspection of monthly data comparing to previous month: transactions, profit and returns
 -   Checking revenue vs. target
 ### Outcome
 -   Weekly revenue can be considered constant in the investigation period in the USA and in Mexico. This value is qiute rhapsodic in Canada with wide amplitudes.
 -   Return rate is extremly high in Canada (11,14%) despite few transactions and number of stores
 -   The USA and Canada did not reach the revenue target in the investigation period (nearly 10% below the target)
--   Significant increase compared to previous month in Guadalajara (MEX) - December 1998
-
-        o   transactions +63,81 %
-        o   profit +65,04 %
-
+-   Significant increase compared to previous month in Guadalajara (MEX) - December 1998: transactions +63,81 %, profit +65,04 % 
 ### Methods and steps
--   Load multiple CSV files into Power BI Desktop, 2 of them (Transactions_1997 and Transactions_1198) from separate folder via folder path
--   Check coloumn quality, coloumn distribution and coloumn profile regarding the whole data set in Power Query editor
--   Check data types in Power Query editor
--   Transform data in Power Query editor
-
-        o   Promoted first row as header in each tables
-        o   Change data type in each tables for the necessary form
-        o   Merge coloumns (Customer table - full_name, Stores table – full_adress)
-        o   Add conditional coloumn (Customer table – has_children)
-        o   Add calculated coloumn (Products table – discount_price)
-        o   Replace values from NULL to zero
-        o   Add new coloumn (Stores table – area_code)
-        o   Add new coloumns (Date table – start of week, start of month, quarter, year etc.)
--   Create data model in Model view
+-   Loading multiple CSV files into Power BI Desktop, 2 of them (Transactions_1997 and Transactions_1198) from separate folder via folder path
+-   Checking coloumn quality, coloumn distribution, coloumn profile and data types regarding the whole data set in Power Query editor
+-   Transforming data in Power Query editor in order to prepare analysis
+-   Creating data model in Model view
 
         o   connecting data/fact tables (Transactions, Return data) to dimension/lookup tables based on common ID’s and date
         o   Date primary key in Calendar table can connect to stock_date foreign key and transaction_date foreign key in Transactions table. The latter one will be active and the previous one will be inactive relationship.
