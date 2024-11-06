@@ -22,16 +22,16 @@ Through the investigation the company can get a clear picture about it’s perfo
 -   Transforming data in Power Query editor in order to prepare analysis
 -   Creating data model in Model view
 
-        o   connecting data/fact tables (Transactions, Return data) to dimension/lookup tables based on common ID’s and date
+        o   Connecting data/fact tables (Transactions, Return data) to dimension/lookup tables (Customers, Products, Calendar, Stores, Regions) based on common ID’s and date
         o   Date primary key in Calendar table can connect to stock_date foreign key and transaction_date foreign key in Transactions table. The latter one will be active and the previous one will be inactive relationship.
-        o   organizing dimension tables above fact tables in order to vizualize filter flow from up to down and highliht the snowflake scema
-        o   Setting one-to-many cardinality and one-way filters
+        o   Organizing dimension tables above fact tables in order to vizualize filter flow from up to down and highliht the snowflake scema
+        o   Setting one-to-many cardinality and one-way filter directions
         o   Connecting data tables to each other via shared dimension tables
         o   Hiding all foreign keys from Report view prevent to use them for filtering
 
 ![Maven Market_model](https://github.com/bujdosox/LEGO_project_PowerBI/assets/173184545/51049ee6-809b-4246-b5e2-11bd44b76535)
 
--   Create a separate table for measures in Table view + create DAX measures
+-   Creating separate table for measures + create DAX calculations in order to use them anywhere in the report, referenced by other DAX measures and provide more complex calculations. 
 
         o       Total Transactions = COUNTROWS(Transactions) 
         o       Total Returns = COUNTROWS(Return_Data) 
